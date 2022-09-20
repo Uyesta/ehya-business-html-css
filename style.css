@@ -260,8 +260,13 @@ header .menu .menu-list .btn {
     color:#183B56;
 }
 
-
-.how-it-works .content .content-yt p {
-    font-size: 18px;
+.how-it-works .content .content-yt .text p {
+    font-size: 14px;
     color: #5A7184;
+    margin-bottom: 20px;
+}
+
+.how-it-works .content .content-yt .text a {
+text-decoration: none;
+color: var(--primary-background-color);
 }
