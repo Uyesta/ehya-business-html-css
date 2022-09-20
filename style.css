@@ -31,6 +31,12 @@ body {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 header {
     width: 100%;
     height: 100vh;
@@ -230,7 +236,7 @@ header .menu .menu-list .btn {
     border-radius: var(--radius);
 }
 
-.how-it-works .content .content-yt::before {
+.how-it-works .content .content-yt .img {
     content: "";
     position: absolute;
     width: 70%;
@@ -239,6 +245,8 @@ header .menu .menu-list .btn {
     left: -300px;
     background-color: var(--second-background-color);
     border-radius: var(--radius);
+    overflow: hidden;
+
 }
 
 .how-it-works .content .content-yt .text {
@@ -257,7 +265,7 @@ header .menu .menu-list .btn {
     color: var();
     font-size: 25px;
     font-weight: 600;
-    color:#183B56;
+    color: #183B56;
 }
 
 .how-it-works .content .content-yt .text p {
@@ -267,6 +275,10 @@ header .menu .menu-list .btn {
 }
 
 .how-it-works .content .content-yt .text a {
-text-decoration: none;
-color: var(--primary-background-color);
+    text-decoration: none;
+    color: var(--primary-background-color);
+}
+
+.graph{
+    
 }
