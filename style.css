@@ -2,11 +2,13 @@
 
     --primary-background-color: #1565D8;
     --second-background-color: #fc5a5a;
+    --third-background-color: #00B8D9;
 
 
     --primary-text-color: #fff;
     --second-text-color: #36B37E;
     --third-text-color: #183B56;
+    --fourth-text-color: #5A7184;
 
     --border: 1px solid #ECEEF2;
 
@@ -41,6 +43,10 @@ header {
     width: 100%;
     height: 100vh;
     background-color: var(--primary-background-color);
+}
+
+.mt5 {
+    margin-top: 15px;
 }
 
 .container {
@@ -183,7 +189,7 @@ header .menu .menu-list .btn {
     font-size: 18px;
     line-height: 32px;
     font-weight: 400;
-    color: #5A7184;
+    color: var(--fourth-text-color);
 }
 
 .benefit .hero {
@@ -214,7 +220,7 @@ header .menu .menu-list .btn {
 
 .benefit .hero .hero-card .img-decs p {
     font-size: 14px;
-    color: #5A7184;
+    color: var(--fourth-text-color);
     margin-top: 20px;
 }
 
@@ -265,12 +271,12 @@ header .menu .menu-list .btn {
     color: var();
     font-size: 25px;
     font-weight: 600;
-    color: #183B56;
+    color: var(--third-text-color);
 }
 
 .how-it-works .content .content-yt .text p {
     font-size: 14px;
-    color: #5A7184;
+    color: var(--fourth-text-color);
     margin-bottom: 20px;
 }
 
@@ -298,21 +304,39 @@ header .menu .menu-list .btn {
 }
 
 .graph .title p {
-    color: #5A7184;
+    color: var(--fourth-text-color);
+    margin-top: 3rem;
 }
 
 .graph .content {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-top: 5rem;
 }
 
 .graph .content .box-left {
     position: relative;
-    background-color: #00B8D9;
+    background-color: var(--third-background-color);
     width: 45%;
     height: 548px;
     border-radius: var(--radius);
+}
+
+.graph .content .box-left::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #FAAD13;
+    top: 250px;
+    right: -100px;
+    background-image: url(img/iconspace_Notification\ 2_25px@2x.png);
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
 }
 
 .graph .content .box-left .box-card {
@@ -326,7 +350,11 @@ header .menu .menu-list .btn {
     box-shadow: 1px 1px rgba(139, 139, 139, 0.548);
 }
 
-.graph .content .box-left .box-card .card-head {
+.graph .content .box-left .box-card .center {
+    margin: 2rem;
+}
+
+.graph .content .box-left .box-card .center .card-head {
     width: 100%;
     height: 50px;
     display: flex;
@@ -334,26 +362,22 @@ header .menu .menu-list .btn {
     padding: 2rem;
 }
 
-.graph .content .box-left .box-card .card-head {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
+.graph .content .box-left .box-card .center .card-head .card-text {
+    font-size: 20px;
+    color: var(--third-text-color);
 }
 
-.graph .content .box-left .box-card .card-head2 {
+.graph .content .box-left .box-card .center .card-head2 {
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    margin: 2rem;
     border: 1px solid grey;
     border-radius: var(--radius);
 }
 
-.graph .content .box-left .box-card .card-head2 .card-photo {
+.graph .content .box-left .box-card .center .card-head2 .card-photo {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -361,11 +385,99 @@ header .menu .menu-list .btn {
 
 }
 
-
-.graph .content .box-left .box-card .card-head2 .card-name {
-    width: 30%;
+.graph .content .box-left .box-card .center .card-head2 .card-name {
+    width: 50%;
 }
 
-.graph .content .box-left .box-card .card-head2 .card-price {
-    width: 30%;
+.graph .content .box-left .box-card .center .card-head2 .card-price {
+    width: 23%;
+    color: blue;
+    font-size: 25px;
+}
+
+.graph .content .box-left .box-card .center .card-main {
+    width: 100%;
+}
+
+.graph .content .box-left .box-card .center .card-main .card-main-name {
+    margin-top: 2rem;
+}
+
+
+.graph .content .box-left .box-card .center .card-main .card-main-name span {
+    font-size: 22px;
+}
+
+.graph .content .box-left .box-card .center .card-main .card-main-name p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: var(--fourth-text-color);
+}
+
+.graph .content .box-left .box-card .center .card-footer {
+    margin-top: 30px;
+}
+
+.graph .content .box-left .box-card .center .card-footer .card-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.graph .content .box-left .box-card .center .card-footer .card-btn a {
+    padding: 10px 50px;
+    border: 2px solid var(--third-background-color);
+    margin-right: 20px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--third-background-color);
+}
+
+.graph .content .box-left .box-card .center .card-footer .card-btn a:last-child {
+    margin-right: 0px;
+    border: none;
+    background-color: var(--third-background-color);
+    color: white;
+}
+
+.graph .content .box-right {
+    width: 40%;
+    height: 548px;
+}
+
+.graph .content .box-right span {
+    display: block;
+    margin-top: 5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--third-background-color);
+    font-size: 18px;
+}
+
+.graph .content .box-right .box-head h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    color: var(--third-text-color);
+    margin-top: 55px;
+}
+
+.graph .content .box-right .box-text {
+    margin-top: 15px;
+    line-height: 32px;
+    font-size: 18px;
+    color: var(--fourth-text-color);
+}
+
+.graph .content .box-right .box-btn{
+    margin-top: 55px;
+}
+
+.graph .content .box-right .box-btn a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--third-text-color);
+    padding: 20px 35px;
+    border-radius: var(--radius);
+    font-size: 17px;
 }
