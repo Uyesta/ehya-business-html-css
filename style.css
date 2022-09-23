@@ -46,6 +46,14 @@ header {
     background-color: var(--primary-background-color);
 }
 
+.succes{
+    color: #36B37E;
+}
+
+.failed,.danger{
+    color: red;
+}
+
 .mt5 {
     margin-top: 15px;
 }
@@ -495,7 +503,7 @@ header .menu .menu-list .btn {
 .track .box .box-left {
     width: 45%;
     height: 600px;
-    }
+}
 
 .track .box .box-left span {
     color: var(--second-text-color);
@@ -540,16 +548,16 @@ header .menu .menu-list .btn {
     padding: 9px 22px 33px 0px;
 }
 
-.track .box .box-left .box-service .service .service-right{
+.track .box .box-left .box-service .service .service-right {
     width: 80%;
 }
 
-.track .box .box-left .box-service .service .service-right .service-head{
+.track .box .box-left .box-service .service .service-right .service-head {
     color: var(--third-text-color);
     font-size: 20px;
 }
 
-.track .box .box-left .box-service .service .service-right .service-dcs{
+.track .box .box-left .box-service .service .service-right .service-dcs {
     color: var(--fourth-text-color);
     font-size: 16px;
 }
@@ -557,5 +565,119 @@ header .menu .menu-list .btn {
 .track .box .box-right {
     width: 45%;
     height: 600px;
-    border: var(--border);
+}
+
+.track .box .box-right .box-right-back {
+    position: relative;
+    background-color: rgba(250, 173, 19, 0.2);
+    width: 90%;
+    margin-left: 10%;
+    height: 450px;
+    border-radius: var(--radius);
+    margin-top: 90px;
+}
+
+.track .box .box-right .box-right-back .box-right-card {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    top: 50px;
+    left: -50px;
+    background-color: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-head {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-head .tag {
+    border-radius: 20px;
+    padding: 6px 10px;
+    background-color: rgba(179, 186, 197, 0.3);
+    color: var(--fourth-text-colorcolor);
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-head .tag:last-child {
+    margin-right: 0px;
+
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-head .tag:first-child {
+    background-color: #FAAD13;
+    color: var(--primary-text-color);
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-content {
+    margin: 1rem;
+}
+
+.track input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-content .content {
+    display: flex;
+    margin-top: 45px;
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-content .content .checked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-content .content .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 15%;
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-content .content .info {
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-content .content .info .name {
+    margin-right: auto;
+    color: var(--third-text-color);
+}
+
+
+.track .box .box-right .box-right-back .box-right-card .box-content .content .info .name p {
+    color: var(--fourth-text-color);
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-content .progres-bar {
+    width: 60%;
+    min-height: 5px;
+    background-color: grey;
+    border-radius: 50px;
+    margin-left: 30%;
+    margin-top: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.track .box .box-right .box-right-back .box-right-card .box-content .progres-bar::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    background-color: #36B37E;
 }
