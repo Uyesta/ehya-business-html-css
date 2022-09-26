@@ -11,6 +11,7 @@
     --second-text-color-flue: rgba(54, 181, 128,0.2);
     --third-text-color: #183B56;
     --fourth-text-color: #5A7184;
+    --fifth-text-color : orange;
     --six-text-color: rgba(99, 99, 99, 0.5);
 
     --border: 1px solid #ECEEF2;
@@ -51,6 +52,30 @@ header {
 
 .succes {
     color: var(--second-text-color);
+}
+
+.xl{
+    background-color: var(--second-text-color);
+    border-radius: var(--radius);
+    color: var(--primary-text-color);
+}
+
+.xr{
+    background-color: var(--third-background-color);
+    color:var(--primary-text-color);
+    border-radius: var(--radius);
+}
+
+.dt{
+    background-color: var(--primary-background-color);
+    color:var(--primary-text-color);
+    border-radius: var(--radius);
+}
+
+.sdt{
+    background-color: orange;
+    color:var(--primary-text-color);
+    border-radius: var(--radius);
 }
 
 .failed,
@@ -741,13 +766,12 @@ header .menu .menu-list .btn {
 }
 
 .left-card .content{
-    margin: 2rem;
     display: flex;
-    justify-content: space-between;
 }
 
 .left-card .content .data{
-    width: 65%;
+    width: 50%;
+    margin: 2rem;
 }
 
 .data .data-title{
@@ -806,6 +830,7 @@ header .menu .menu-list .btn {
 }
 
 .data-btn{
+    display: flex;
     margin-top: 10px;
 }
 
@@ -818,19 +843,86 @@ header .menu .menu-list .btn {
     border-radius: var(--radius);
 }
 
+.expo-data{
+    width: 40%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    height: 400px;
+}
 
+.expo-data .expo-box{
+    margin: 1rem;
+}
 
+.expo-data .expo-title{
 
+    color: var(--third-text-color);
+    font-size: 24px;
+    font-weight: 600;
+}
 
+.expo-data .content{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    height: 55px;
+    text-align: center;
+}
 
+.expo-data .content .checked{
+    width: 20%;
+}
 
+.content input[type=checkbox] {
+    width: 100%;
+    height: 20px;
+}
 
+.expo-data .content .format{
+    width: 35%;
+    height: 50px;
+    border: var(--border);
+}
 
-
+.expo-data .content .name{
+    width: 40%;
+}
 
 .export .right-side{
     width: 45%;
     height: 450px;
+}
+
+.right-side-box{
+    padding:2rem;
+    height: 400px;
     border:var(--border);
     border-radius: var(--radius);
+}
+
+.right-side-box .right-title{
+    margin-top:3rem;
+    color: var(--fifth-text-color);
+}
+
+
+.right-side-box .right-text{
+    width: 80%;
+    font-size: 30px;
+    color: var(--third-text-color);
+    font-weight: 600;
+}
+
+
+.right-side-box .filetype .type{
+    border: var(--border);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    
+
+}
+
+.right-side-box input[type=checkbox] {
+    width: 6%;
+    height: 15px;
 }
