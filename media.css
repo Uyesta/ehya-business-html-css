@@ -1,0 +1,248 @@
+@media screen and (max-width:1160px) {
+    .container {
+        width:700px;
+    }
+
+    header {
+        height: 150vh;
+    }
+
+    .mobil-menu{
+        display: block;
+    }
+
+
+    .menu-list {
+        display: none;
+    }
+
+    .header-body {
+        margin-top: 0px;
+        flex-wrap: wrap;
+    }
+
+    .header-body .content {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .header-body .content h2 {
+        font-size: 35px;
+    }
+
+    .header-body .content-img {
+        width: 80%;
+        height: 350px;
+        margin: 15px auto
+    }
+
+    .header-body .content input {
+        width: 80%;
+    }
+
+    .header-body .content .text-box button {
+        right: 55px;
+    }
+
+    .header-footer {
+        width: 650px;
+    }
+
+    .how-it-works .content .content-yt .img {
+        background-color: transparent;
+        left: -200px;
+    }
+
+    .how-it-works .content .content-yt .img img {
+        max-width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .benefit .hero .hero-card .img-decs h3 {
+        font-size: 15px;
+    }
+
+    .hero-card img {
+        height: 109.63px;
+    }
+
+    .graph .content {
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+
+    .graph .content .box-right {
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .graph .content .box-right span {
+        margin: 0px;
+    }
+
+    .graph .content .box-right .box-head h3 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .graph .content .box-right .box-text {
+        width: 80%;
+        margin: auto;
+    }
+
+    .graph .content .box-left {
+        width: 60%;
+        margin: auto;
+    }
+
+    .graph .content .box-left .box-card .center .card-head {
+        padding: 0rem;
+    }
+
+    .graph .content .box-left .box-card .center .card-head2 {
+        padding: 0rem;
+        justify-content: center;
+    }
+
+    .graph .content .box-left .box-card .center .card-head2 .card-name {
+        width: 40%;
+    }
+
+    .graph .content .box-left .box-card .center .card-footer .card-btn {
+        align-items: center;
+    }
+
+    .graph .content .box-left .box-card .center .card-footer .card-btn a:last-child {
+        padding: 13px 10px;
+    }
+
+    .track .box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .track .box .box-left {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    .track .box-left .box-head {
+        width: 70%;
+        margin: auto;
+    }
+
+    .track .box .box-left h3 {
+        font-size: 28px;
+    }
+
+    .track .box .box-left .box-service {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .track .box .box-left .box-service .service {
+        width: 200px;
+        height: 250px;
+        padding: 0;
+        display: block;
+    }
+
+    .track .box .box-left .box-service .service:first-child {
+        margin-top: 15px;
+    }
+
+    .track .box .box-left .box-service .service .service-left {
+        width: 100%;
+        padding: 0;
+    }
+
+    .track .box .box-left .box-service .service .service-right {
+        width: 80%;
+        margin: auto;
+    }
+
+    .track img {
+        width: 30px;
+    }
+
+    .track .box .box-right {
+        width: 80%;
+    }
+
+    .export .box {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .export .right-side {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-side-box .right-text {
+        margin: auto;
+    }
+
+    .right-side-box .filetype {
+        justify-content: center;
+    }
+
+    .export .left-side {
+        width: 80%;
+        margin: auto;
+    }
+
+    .left-background {
+        width: 80%;
+    }
+
+    .left-background .left-card {
+        width: 120%;
+    }
+
+    .footer-top .box{
+        display: block;
+    }
+
+    .footer-top .text{
+        width: 80%;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .footer-top .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .content{
+        justify-content: end;
+    }
+    footer .menu:first-child{
+        width:200px
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+
+    header {
+        height: 150vh;
+    }
+
+    .mobil-menu{
+        display: block;
+    }
+
+    .container {
+        width: 650px;
+    }
+
+
+}
