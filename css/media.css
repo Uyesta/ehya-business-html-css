@@ -1,16 +1,15 @@
 @media screen and (max-width:1160px) {
     .container {
-        width:700px;
+        width: 700px;
     }
 
     header {
         height: 150vh;
     }
 
-    .mobil-menu{
+    .mobil-menu {
         display: block;
     }
-
 
     .menu-list {
         display: none;
@@ -49,6 +48,15 @@
     .header-footer {
         width: 650px;
     }
+
+    .how-it-works .content .content-yt {
+        width: 90%;
+    }
+
+    .graph {
+        margin-top: 50px;
+    }
+
 
     .how-it-works .content .content-yt .img {
         background-color: transparent;
@@ -206,25 +214,28 @@
         width: 120%;
     }
 
-    .footer-top .box{
+    .footer-top .box {
         display: block;
     }
 
-    .footer-top .text{
+    .footer-top .text {
         width: 80%;
         margin: 15px auto;
         text-align: center;
     }
-    .footer-top .btn{
+
+    .footer-top .btn {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    footer .content{
+
+    footer .content {
         justify-content: end;
     }
-    footer .menu:first-child{
-        width:200px
+
+    footer .menu:first-child {
+        width: 200px
     }
 }
 
@@ -233,10 +244,10 @@
 
 
     header {
-        height: 150vh;
+        height: 80vh;
     }
 
-    .mobil-menu{
+    .mobil-menu {
         display: block;
     }
 
@@ -245,4 +256,159 @@
     }
 
 
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        width: 440px;
+    }
+
+    header {
+        height: 150vh;
+    }
+
+    .header-body .content form {
+        background-color: white;
+        border-radius: var(--radius);
+        padding-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    .header-body .content input {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .header-body .content .text-box button {
+        width: 90%;
+        left: 15px;
+        border-radius: var(--radius);
+    }
+
+    .header-footer {
+        flex-wrap: wrap;
+        width: 420px;
+        justify-content: center;
+    }
+
+    .header-footer .content {
+        width: 37%;
+        margin-top: 20px;
+    }
+
+    .header-footer .content:nth-child(2n+2) {
+        margin-left: 15px;
+    }
+
+    .benefit .hero {
+        display: block;
+    }
+
+    .benefit .hero .hero-card {
+        width: 100%;
+        height: 250px;
+        margin-top: 150px;
+    }
+
+    .benefit .hero .hero-card:first-child {
+        margin-top: 0px;
+    }
+
+    .benefit .hero .hero-card .img {
+        height: 250px;
+    }
+
+    .benefit .hero .hero-card .img img {
+        height: 250px;
+    }
+
+    .benefit .hero .hero-card .img-decs h3 {
+        font-size: 27px;
+    }
+
+    .benefit .hero .hero-card .img-decs p {
+        font-size: 20px;
+    }
+
+    .how-it-works {
+        padding: 0;
+    }
+
+    .how-it-works .content .content-yt {
+        margin: auto;
+        border: 0px
+    }
+
+    .how-it-works .content .content-yt .img {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .how-it-works .content {
+        height: 600px;
+        display: block;
+    }
+
+    .mobil-hr {
+        margin-top: 10rem !important;
+    }
+
+    .how-it-works .content .content-yt .text {
+        margin: auto;
+        width: 90%;
+    }
+
+    .graph .title {
+        width: auto;
+    }
+
+    .graph .title h3 {
+        width: auto;
+    }
+
+    .graph .content .box-left {
+        width: 100%;
+    }
+
+    .graph .content .box-left .box-card {
+        width: auto;
+        top: 35px;
+    }
+
+    .graph .content .box-left .box-card .center .card-footer .card-btn a:last-child {
+        font-size: 15px;
+    }
+
+    .track .box .box-left .box-service {
+        display: block;
+    }
+
+    .track .box .box-left .box-service .service {
+        width: 100%;
+        height: 175px;
+    }
+
+    .footer-top .btn {
+        display: block;
+    }
+
+    .footer-top .btn a {
+        display: block;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .footer-top .btn a:last-child{
+        margin: 20px auto 20px auto;
+    }
+
+    .footer-top{
+        height: 20rem;
+    }
+
+    .graph .content .box-left::before{
+        display: none;
+    }
 }
